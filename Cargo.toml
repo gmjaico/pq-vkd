@@ -1,0 +1,3 @@
+[workspace]
+members = ["irondict", "benchmark"]
+resolver = "2"

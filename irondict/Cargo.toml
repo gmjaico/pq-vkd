@@ -1,0 +1,27 @@
+[package]
+name = "irondict"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ark-bls12-381 = "0.4"
+ark-ff = "0.4"
+ark-poly = { version = "0.4", features = ["parallel"] }
+ark-serialize = "0.4"
+blake3 = "1"
+rayon = "1"
+bincode = "1"
+# Plonky3, pinned
+p3-air = "=0.5.4"
+p3-challenger = "=0.5.4"
+p3-commit = "=0.5.4"
+p3-dft = "=0.5.4"
+p3-field = "=0.5.4"
+p3-fri = "=0.5.4"
+p3-koala-bear = "=0.5.4"
+p3-matrix = "=0.5.4"
+p3-maybe-rayon = { version = "=0.5.4", features = ["parallel"] }
+p3-merkle-tree = "=0.5.4"
+p3-poseidon2-air = "=0.5.4"
+p3-symmetric = "=0.5.4"
+p3-uni-stark = "=0.5.4"

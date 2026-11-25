@@ -1,0 +1,5 @@
+# Build for this machine's CPU, so Plonky3's packed AVX2 KoalaBear arithmetic
+# is compiled in (it is gated on `target_feature = "avx2"` at build time).
+# Binaries are not portable to CPUs without these features.
+[build]
+rustflags = ["-C", "target-cpu=native"]

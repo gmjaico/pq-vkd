@@ -1,0 +1,22 @@
+[package]
+name = "benchmark"
+version = "0.1.0"
+edition = "2024"
+publish = false
+autobins = false
+
+[dependencies]
+irondict = { path = "../irondict" }
+rayon = "1"
+
+[[bin]]
+name = "deepfold_bench"
+path = "deepfold_bench.rs"
+
+[[bin]]
+name = "irondict_bench"
+path = "irondict_bench.rs"
+
+[[bin]]
+name = "vkd_compare"
+path = "vkd_compare.rs"
